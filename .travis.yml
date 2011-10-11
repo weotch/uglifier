@@ -14,6 +14,6 @@ matrix:
     - rvm: 1.9.2
       env: EXECJS_RUNTIME=RubyRhino
     - rvm: jruby
-      env:
-        - EXECJS_RUNTIME=RubyRacer
-        - EXECJS_RUNTIME=Mustang
+      env: EXECJS_RUNTIME=RubyRacer
+    - rvm: jruby
+      env: EXECJS_RUNTIME=Mustang
