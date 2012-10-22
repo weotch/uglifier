@@ -96,13 +96,13 @@ describe "Uglifier" do
   end
 
   it "honors max line length" do
-    code = "var foo = 123;var bar = 123456"
+    code = "var foo = 123;[].slice()"
     Uglifier.compile(code, :max_line_length => 8).split("\n").length.should == 2
   end
 
   it "lifts vars to top of the scope" do
     code = "function something() { var foo = 123; foo = 1234; var bar = 123456; return foo + bar}"
-    Uglifier.compile(code, :lift_vars => true).should match /var \w,\w/
+    Uglifier.compile(code, :lift_vars => true).should match /\{var \w,\w/
   end
 
   it "can be configured to output only ASCII" do
