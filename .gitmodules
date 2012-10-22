@@ -1,3 +1,6 @@
 [submodule "vendor/uglifyjs"]
 	path = vendor/uglifyjs
 	url = https://github.com/mishoo/UglifyJS.git
+[submodule "vendor/uglifyjs2"]
+	path = vendor/uglifyjs2
+	url = https://github.com/mishoo/UglifyJS2.git
